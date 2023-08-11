@@ -14,7 +14,11 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'address' => $this->faker->address,
+            'email' => $this->faker->email,
+            'phone' => $this->faker->phoneNumber,
+            'name' => $this->faker->name,
+            'delivered' => $this->faker->boolean(20)
         ];
     }
 }
